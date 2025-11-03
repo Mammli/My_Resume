@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(40, 41, 56);
+    font-family: 'Vazir', sans-serif;
+    font-size: 14px;
+}
+
+.buttonStyles {
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+    transition: all 0.25s ease;
+    font-size: 14px;
+}
+
+.buttonStyles:hover {
+    cursor: pointer;
+}
+
+.buttonStyles:active {
+    transform: scale(0.95);
+}
+
+/* شروع هدر و نوشتن نویگیشن بار بالایی*/
+.headerList {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.headerLeftPicture {
+    display: flex;
+    gap: 10px;
+}
+
+.myHeaderIcon {
+    width: auto;
+    height: 35px;
+    background-color: rgb(94, 59, 238);
+    border-radius: 5px;
+}
+
+.myHeaderText {
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.headerButtonContact {
+    border: 1px solid rgb(94, 59, 238);
+    color: rgb(94, 59, 238);
+    background-color: #fff;
+}
+
+.headerButtonContact:hover {
+    background-color: rgb(94, 59, 238);
+    color: #fff;
+}
+
+.headerListCenter {
+    display: flex;
+    gap: 20px;
+}
+
+.headerListTexts {
+    text-decoration: none;
+    transition: all 0.25s ease;
+    margin-top: 9px;
+}
+
+.headerListTexts:hover {
+    color: rgb(94, 59, 238);
+}
+
+/*پایان هدر و شروع کردن قسمت بالایی و توضیحات سایت*/
+.topContent {
+    background-color: rgb(232, 252, 253);
+    height: auto;
+    width: 100%;
+}
+
+.topContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.writtenContent {
+    width: auto;
+    height: auto;
+}
+
+.imgInTopRightContent {
+    width: 35%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.firstLineInfo {
+    font-size: 1vw;
+}
+
+.SecondLineInfo, .selectedWord {
+    font-size: 3vw;
+
+}
+
+
+.thirdLineInfo {
+    font-size: 1.2vw;
+}
+
+.selectedWord {
+    color: rgb(94, 59, 238);
+}
+
+.getInTouchInTop {
+    background-color: rgb(94, 59, 238);
+    color: #fff;
+    border: unset;
+}
+
+.getInTouchInTop:hover {
+    background-color: rgba(95, 59, 238, 0.658);
+}
+
+/*شروع ساختن قسمت مهارت های من  و کارت های آن*/
+.mySkillsTexts {
+    margin: 55px;
+}
+
+.mySkillsCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+
+.cardsStyle {
+    border: solid 1px rgb(199, 247, 250);
+    border-radius: 15px;
+    width: 20%;
+    height: auto;
+    background-color: rgb(232, 252, 253);
+    padding: 25px;
+    transition: all 0.2s;
+}
+
+.cardsStyle:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px -7px #00000093;
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.icons {
+    width: 25%;
+    height: auto;
+    box-shadow: 0px 0px 10px -5px #000000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.mainCardsText {
+    font-size: 1.6vw;
+    font-weight: 900
+}
+
+.subCardText {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+/*پایان ساختن قسمت مهارت های من  و کارت های آن*/
+/*شروع ساختن محتوای وسط و معرفی خودم*/
+.mainDivForCenter {
+    display: flex;
+    margin-bottom: 25vw;
+}
+
+.picForCenterOfPgae {
+    margin: 15vh 6vw 80px 5vw;
+
+}
+
+.picContentForCenter {
+    width: 40vw;
+    height: auto;
+}
+
+.TextForCenterOfPage {
+    margin-top: 30vh;
+    margin-left: 8vw;
+}
+
+.mainTextForCenterOfPage {
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin-bottom: 5vh;
+}
+
+.subTextForCenterOfPage {
+    font-size: 1.1vw;
+}
+
+/*پایان وسطی ها و شروع کارت های محصولات*/
+.myProducts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6vw;
+}
+
+.myProductCard {
+    width: 25.3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.1s;
+    margin-bottom: 10vw;
+}
+
+.myProductCard:hover {
+    translate: -5px -5px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.picForProductCard {
+    width: 25vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.myCardsMainText {
+    font-size: 2vw;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin: 15px 20px 20px 0px;
+}
+
+.myCardsSubText {
+    font-size: 1.1vw;
+    margin: 0px 20px 20px 20px;
+}
+
+.viwWebText {
+    font-size: 1.1vw;
+    margin: 0px 20px 20px 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(238, 59, 113);
+    transition: all 0.2s;
+}
+
+.viwWebText:hover {
+    color: rgba(238, 59, 113, 0.555);
+}
+
+.viwWebText:active {
+    transform: scale(0.95);
+}
+
+.viewWebFirst {
+    margin-top: 10px;
+}
+
+.myFirstCardsSubText {
+    margin-bottom: 5%;
+}
+
+.mySecondCardsSubText {
+    margin-bottom: 10%;
+}
+
+.myThirdCardsSubText {
+    margin-bottom: 5%;
+}
+
+.goLinkIcon {
+    width: 15px;
+    height: auto;
+}
+
+.mainTextProjects {
+    font-size: 3vw;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-right: 4vw;
+}
+
+/*شروع به زدن فوتر سایت*/
+.topFooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topFooterContentCenter {
+    display: flex;
+    gap: 20px;
+}
+
+.FooterContent {
+    background-color: rgb(232, 252, 253);
+    border-radius: 10px 10px 0px 0px;
+    padding: 30px;
+}
+
+.footerIcons {
+    width: 25px;
+}
+
+.topFooterContentRight {
+    display: flex;
+    margin-top: 1vw;
+    gap: 5px;
+}
+.bottomFooterContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
